@@ -1,4 +1,9 @@
-import { BreakDesk, ExoticTitle, Template } from '../styles'
+import {
+  Article,
+  BreakDesk,
+  MainTitle,
+  Template
+} from '../styles'
 import Head from 'next/head'
 import Header from '../src/components/Header'
 
@@ -13,17 +18,17 @@ const Home = () =>
 
       <main>
         <section>
-          <article>
-            <ExoticTitle>
+          <Article center>
+            <MainTitle>
               Já pensou em trabalhar para o <strong>Google</strong>,
 
               <BreakDesk>
                 <strong> Amazon</strong>, <strong>Facebook</strong>, <strong>Spotify</strong> ou <strong>Microsoft</strong>?
               </BreakDesk>
-            </ExoticTitle>
-          </article>
+            </MainTitle>
+          </Article>
 
-          <article>
+          <Article center>
             <h3>Prepare-se para a vaga dos seus sonhos!</h3>
             <p>Nossos desafios são baseados nos mesmos utilizados por essas empresas, vamos te ajudar a se preparar para conseguir a sua vaga dos sonhos!</p>
 
@@ -47,13 +52,13 @@ const Home = () =>
                 <p>Um desafio novo a cada 3 dias.</p>
               </div>
             </form>
-          </article>
+          </Article>
 
-          <article>
+          <Article>
             <h3>O que você tem a ganhar?</h3>
 
 
-          </article>
+          </Article>
         </section>
       </main>
     </Template>
