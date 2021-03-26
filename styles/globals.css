@@ -3,7 +3,6 @@
 html,
 body {
   color: #FFF;
-  font-family: 'Inter', sans-serif;
   font-weight: 200;
   height: 100%;
   margin: 0;
@@ -27,4 +26,5 @@ strong {
 
 * {
   box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
 }

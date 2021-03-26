@@ -15,11 +15,23 @@ type ArticleProps = {
 }
 
 const Article = styled.article<ArticleProps>`
+  max-width: 540px;
   ${({ center }) => center && css`
     text-align: center;
   `}
   padding: 10% 0;
+
+  h3 {
+    font-size: 24px;
+    line-height: 1.3;
+  }
 `;
+
+const Subtitle = styled.p`
+  font-size: 21px;
+  line-height: 1.5;
+  margin-bottom: 2em;
+`
 
 const MainTitle = styled.h2`
   font-size: 27px;
@@ -33,9 +45,10 @@ const BreakDesk = styled.span`
   display: block;
 `
 
-export {
+export const Styles = {
   Article,
   BreakDesk,
   MainTitle,
+  Subtitle,
   Template
 }

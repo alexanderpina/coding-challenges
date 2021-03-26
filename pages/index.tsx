@@ -1,14 +1,10 @@
-import {
-  Article,
-  BreakDesk,
-  MainTitle,
-  Template
-} from '../styles'
+import { Styles } from '../styles'
 import Head from 'next/head'
 import Header from '../src/components/Header'
+import FormSubscribe from 'src/components/FormSubscribe'
 
 const Home = () =>
-    <Template>
+    <Styles.Template>
       <Head>
         <title>Coding Challenges</title>
         <link rel="icon" href="/favicon.ico" />
@@ -18,50 +14,31 @@ const Home = () =>
 
       <main>
         <section>
-          <Article center>
-            <MainTitle>
+          <Styles.Article center>
+            <Styles.MainTitle>
               Já pensou em trabalhar para o <strong>Google</strong>,
 
-              <BreakDesk>
+              <Styles.BreakDesk>
                 <strong> Amazon</strong>, <strong>Facebook</strong>, <strong>Spotify</strong> ou <strong>Microsoft</strong>?
-              </BreakDesk>
-            </MainTitle>
-          </Article>
+              </Styles.BreakDesk>
+            </Styles.MainTitle>
+          </Styles.Article>
 
-          <Article center>
+          <Styles.Article center>
             <h3>Prepare-se para a vaga dos seus sonhos!</h3>
-            <p>Nossos desafios são baseados nos mesmos utilizados por essas empresas, vamos te ajudar a se preparar para conseguir a sua vaga dos sonhos!</p>
+            <Styles.Subtitle>Nossos desafios são baseados nos mesmos utilizados por essas empresas, vamos te ajudar a se preparar para conseguir a sua vaga dos sonhos!</Styles.Subtitle>
 
-            <form>
-              <div>
-                <label>
-                  <span>Seu nome</span>
-                  <input type="text"/>
-                </label>
-              </div>
+            <FormSubscribe />
+          </Styles.Article>
 
-              <div>
-                <label>
-                  <span>Seu e-mail</span>
-                  <input type="email"/>
-                </label>
-              </div>
-
-              <div>
-                <button>Começar agora!</button>
-                <p>Um desafio novo a cada 3 dias.</p>
-              </div>
-            </form>
-          </Article>
-
-          <Article>
+          <Styles.Article center>
             <h3>O que você tem a ganhar?</h3>
 
 
-          </Article>
+          </Styles.Article>
         </section>
       </main>
-    </Template>
+    </Styles.Template>
 
 
 export default Home;
